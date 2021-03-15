@@ -12,7 +12,7 @@
 		    Httpreq.send(null);
 		    return Httpreq.responseText;          
 		}
-		var JsonReturn=JSON.parse(Get("https://buildingafrank.github.io/schema-test/schema.json"));
+		var JsonReturn=JSON.stringify(Get("https://buildingafrank.github.io/schema-test/schema.json"));
 		jSonscript.innerHTML=JsonReturn.slice(1,-1);
 		paragraphe.innerHTML=JSON.stringify(Get("https://buildingafrank.github.io/schema-test/schema.json"));
 	</script>
