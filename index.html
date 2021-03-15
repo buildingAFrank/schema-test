@@ -3,8 +3,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script>
-		var script = document.createElement('script');
-		script.type="application/ld+json";
+		
 
 		function Get(yourUrl){
     		var Httpreq = new XMLHttpRequest(); // a new request
@@ -13,16 +12,19 @@
 		    return Httpreq.responseText;          
 		}
 
-		var json_obj = JSON.parse(Get("https://buildingafrank.github.io/schema-test/schema.json"));
-
-		script.innerHTML=json_obj;
-		document.getElementById('schemaDotOrg').appendChild(script);
+		
 	</script>
 	<script type="application/ld+json" src="https://github.com/buildingAFrank/schema-test/blob/main/schema.json">	
 	</script>
 	<title>Document</title>
 </head>
 <body>
+	<script>
+		var jSonscript = document.createElement('script');
+		jSonscript.type="application/ld+json";
+		jSonscript.innerHTML=JSON.parse(Get("https://buildingafrank.github.io/schema-test/schema.json"));
+		document.getElementById('schemaDotOrg').appendChild(jSonscript);
+	</script>
 	<div id="schemaDotOrg"></div>
 	
 </body>
