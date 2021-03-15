@@ -3,7 +3,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script>
-		
+		var jSonscript = document.createElement('script');
 
 		function Get(yourUrl){
     		var Httpreq = new XMLHttpRequest(); // a new request
@@ -22,7 +22,7 @@
 	<div id="schemaDotOrg"></div>
 	
 	<script>
-		var jSonscript = document.createElement('script');
+		
 		//jSonscript.type="application/ld+json";
 		//jSonscript.innerHTML=JSON.parse(Get("https://buildingafrank.github.io/schema-test/schema.json"));
 		document.body.appendChild(jSonscript);
