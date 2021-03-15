@@ -3,19 +3,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script>
+		var script = document.createElement('script');
+		script.type="application/ld+json";
+
 		function Get(yourUrl){
-    var Httpreq = new XMLHttpRequest(); // a new request
-    Httpreq.open("GET",yourUrl,false);
-    Httpreq.send(null);
-    return Httpreq.responseText;          
-}
-var Schema=[`<script type="application/ld+json">`,`<//script>`];
-var json_obj = JSON.parse(Get("https://buildingafrank.github.io/schema-test/schema.json"));
-var script = document.createElement('script');
-script.type="application/ld+json";
-var data= Schema[0]+json_obj+Schema[1];
-script.innerHTML=data;
-document.getElementById('schemaDotOrg').appendChild(script);
+    		var Httpreq = new XMLHttpRequest(); // a new request
+		    Httpreq.open("GET",yourUrl,false);
+		    Httpreq.send(null);
+		    return Httpreq.responseText;          
+		}
+
+		var json_obj = JSON.parse(Get("https://buildingafrank.github.io/schema-test/schema.json"));
+
+		script.innerHTML=json_obj;
+		document.getElementById('schemaDotOrg').appendChild(script);
 	</script>
 	<script type="application/ld+json" src="https://github.com/buildingAFrank/schema-test/blob/main/schema.json">	
 	</script>
