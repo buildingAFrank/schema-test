@@ -4,7 +4,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script>
 		var jSonscript = document.createElement('script');
-		var paragraphe= document.createElement('p');
 		jSonscript.type="application/ld+json";
 		function Get(yourUrl){
     		var Httpreq = new XMLHttpRequest(); // a new request
@@ -12,21 +11,13 @@
 		    Httpreq.send(null);
 		    return Httpreq.responseText;          
 		}
-
 		jSonscript.innerHTML=Get("https://buildingafrank.github.io/schema-test/schema.json");
-		paragraphe.innerHTML=JSON.stringify(Get("https://buildingafrank.github.io/schema-test/schema.json"));
 	</script>
-	<!-- <script type="application/ld+json" src="https://github.com/buildingAFrank/schema-test/blob/main/schema.json"></script> -->
 	<title>Document</title>
 </head>
 <body>
-	<div id="schemaDotOrg"></div>
-	
 	<script>
 		document.body.appendChild(jSonscript);
-		document.body.appendChild(paragraphe);
 	</script>
-	
-	
 </body>
 </html>
