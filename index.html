@@ -14,7 +14,8 @@ var json_obj = JSON.parse(Get("https://buildingafrank.github.io/schema-test/sche
 var script = document.createElement('script');
 script.type="application/ld+json";
 var data= Schema[0]+json_obj+Schema[1];
-document.getElementById('schemaDotOrg').appendChild(data);
+script.innerHTML=data;
+document.getElementById('schemaDotOrg').appendChild(script);
 	</script>
 	<script type="application/ld+json" src="https://github.com/buildingAFrank/schema-test/blob/main/schema.json">	
 	</script>
