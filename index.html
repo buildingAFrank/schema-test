@@ -10,7 +10,7 @@
     return Httpreq.responseText;          
 }
 var Schema=[`<script type="application/ld+json">`,`<//script>`];
-var json_obj = JSON.parse(Get("./schema.json"));
+var json_obj = JSON.parse(Get("https://buildingafrank.github.io/schema-test/schema.json"));
 var script = document.createElement('script');
 script.type="application/ld+json";
 var data= Schema[0]+json_obj+Schema[1];
