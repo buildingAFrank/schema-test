@@ -1,4 +1,4 @@
-{
+const data={
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "name": "Apple Pie by Grandma",
@@ -23,4 +23,5 @@
         "1 box refrigerated pie crusts, softened as directed on box",
         "6 cups thinly sliced, peeled apples (6 medium)"
       ]
-    }
+   }
+module.exports=data;
