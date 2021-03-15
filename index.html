@@ -2,6 +2,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Document</title>
+</head>
+<body>
 	<script>
 		var jSonscript = document.createElement('script');
 		jSonscript.type="application/ld+json";
@@ -13,9 +17,7 @@
 		}
 		jSonscript.innerHTML=Get("https://buildingafrank.github.io/schema-test/schema.json");
 	</script>
-	<title>Document</title>
-</head>
-<body>
+	
 	<script>
 		document.body.appendChild(jSonscript);
 	</script>
