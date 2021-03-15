@@ -1,4 +1,4 @@
-const data={
+{
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "name": "Apple Pie by Grandma",
@@ -24,4 +24,3 @@ const data={
         "6 cups thinly sliced, peeled apples (6 medium)"
       ]
    }
-module.exports=data;
