@@ -1,0 +1,12 @@
+.LS-link__btn{
+		width:100%;
+		text-align:center;
+		padding:10px 0;
+	}
+	.LS-innerLink{
+		border:2px solid red;
+		border-radius: 5px;
+		padding:10px 20px;
+		color:red;
+		background:white;
+	}
